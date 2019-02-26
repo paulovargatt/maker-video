@@ -1,0 +1,23 @@
+{
+  "name": "maker-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulovargatt/maker-video.git"
+  },
+  "keywords": [
+    "video-maker",
+    "node"
+  ],
+  "author": "Paulo Vargatt <pvargatt@gmail.com> (https://vargatt.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulovargatt/maker-video/issues"
+  },
+  "homepage": "https://github.com/paulovargatt/maker-video#readme"
+}
