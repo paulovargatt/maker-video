@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/paulovargatt/maker-video/issues"
   },
-  "homepage": "https://github.com/paulovargatt/maker-video#readme"
+  "homepage": "https://github.com/paulovargatt/maker-video#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
