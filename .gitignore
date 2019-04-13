@@ -51,11 +51,12 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+content.json
+.idea/workspace.xml
 # Yarn Integrity file
 .yarn-integrity
-
+ .idea
 # dotenv environment variables file
 .env
-
 # next.js build output
 .next

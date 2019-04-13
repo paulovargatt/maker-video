@@ -1,30 +1,15 @@
 const readline = require('readline-sync')
 const robots = {
-    text: require('./robots/text')
+    input: require('./robots/input'),
+    text: require('./robots/text'),
+    state: require('./robots/state')
 };
 
 async function start() {
-    const content = {
-        maximumSentences: 7
-    };
-
-    content.searchTerm = askAndReturnSearchTerm();
-    content.prefix = askAndReturnPrefix();
-    await robots.text(content);
-
-    function askAndReturnSearchTerm() {
-        return readline.question('Escreva um termo para pesquisa na Wiki:')
-    }
-
-    function askAndReturnPrefix() {
-        const prefixes = ['Oque é', 'What Is', 'The History'];
-        const selectedPrefix = readline.keyInSelect(prefixes);
-        const selectedPrefixText = prefixes[selectedPrefix];
-
-        return selectedPrefixText;
-    }
-
-    console.log(JSON.stringify(content,null,4))
+    robots.input();
+    await robots.text()
+    const content = robots.state.load()
+    console.dir(content, {depth: null})
 }
 
 start();
